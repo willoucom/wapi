@@ -12,6 +12,9 @@ Le mode de fonctionnement est le suivant :
 - Le plus possible de code est réutilisé en cas de mise à jour
 - Chaque nouvelle version d'un objet va hériter du précédent
 - Chaque controlleur est un fichier plat incluant le moins possible d'autres fichiers pour économiser les ressources
+- A la fin de chaque déploiement, le script scripts/postdeploy/postdeployscript.php doit être executé
+- Les routes sont définies dans routes.ini
+
 
 La version "live" est accessible ici :
 
