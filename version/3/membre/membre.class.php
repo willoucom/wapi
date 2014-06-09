@@ -2,6 +2,6 @@
 
 class membre3 extends membre2
 {
-    private $version = 3;
+    public $version = 3;
 
 }
