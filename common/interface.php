@@ -2,5 +2,5 @@
 
 interface iTemplate
 {
-    public function return($me);
+    public function version();
 }
