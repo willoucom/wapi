@@ -4,5 +4,5 @@ require '../../../common/config.inc.php';
 
 $membre = new membre2();
 
-echo "2 : ";
-echo $membre->version();
+$render->setVersion($membre->version());
+$render->json();
