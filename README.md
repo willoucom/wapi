@@ -15,6 +15,9 @@ Le mode de fonctionnement est le suivant :
 - A la fin de chaque déploiement, le script scripts/postdeploy/postdeployscript.php doit être executé
 - Les routes sont définies dans routes.ini
 
+Les paramètres passés aux controlleurs sont récupérés par l'objet soumission, le contenu est disponible dans l'objet $request
+Le rendereur est automatiquement crée, pour effectuer le rendu, il suffit d'appeller la methode souhaitée, par exemple $render->json();
+
 
 La version "live" est accessible ici :
 

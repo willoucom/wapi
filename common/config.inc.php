@@ -5,10 +5,17 @@ ini_set('display_errors', 1);
 chdir(dirname(__FILE__));
 chdir('../');
 
-if(class_exists('render')) {
-    $render = new render();
+$request = "";
+if(class_exists('submission')) {
+    $submission = new submission();
+    $request = $submission->transform();
+}
+
+if(class_exists('auth')) {
+    $auth = new auth($request);
 }
 
 if(class_exists('render')) {
-    $auth = new auth();
+    $render = new render();
+    $render->setSoumission($request);
 }

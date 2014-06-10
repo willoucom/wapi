@@ -7,5 +7,8 @@
 
 class auth {
 
-
+    public function __construct($request)
+    {
+        // do some stuff
+    }
 } 
